@@ -1,0 +1,137 @@
+.container {
+  width: 25%;
+  overflow: hidden;
+}
+.info {
+  margin: auto;
+  width: 80%;
+  padding-top: 20px;
+}
+.icon {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  background-color: grey;
+  border-radius: 30px;
+}
+.name {
+  padding-top: 20px;
+  text-align: center;
+}
+.username {
+  text-align: center;
+  font-size: 12px;
+  padding-top: 5px;
+  color: grey;
+}
+.icons {
+  margin: auto;
+  width: 90%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.social {
+  width: 95%;
+  margin: auto;
+  height: 100px;
+  margin-top: 50px;
+}
+.connection {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 300ms;
+}
+.connection:hover {
+  background-color: rgba(102, 102, 102, 0.38);
+  transform: scale(1.1);
+}
+.socialBlock {
+  width: 100%;
+  background-color: white;
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  border-radius: 2px;
+  margin-bottom: 40px;
+}
+.media {
+  display: flex;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+.socialImages {
+  width: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.socialUsername {
+  padding-left: 5px;
+  font-size: 14px;
+}
+.mediaBlock {
+  width: 100%;
+  background-color: white;
+  padding: 5px 5px;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.desktop {
+  width: 40px;
+  height: 40px;
+  background-color: #c1d5ff;
+  border-radius: 5px;
+}
+.desktopText {
+  padding-left: 5px;
+  font-size: 14px;
+}
+
+/*** Стили для темной темы ***/
+
+.container_dark {
+  background-color: #242424;
+  color: white;
+  width: 25%;
+  overflow: hidden;
+}
+.mediaBlock_dark {
+  width: 100%;
+  background-color: rgb(47, 46, 46);
+  padding: 5px 5px;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  border-radius: 3px;
+}
+.socialBlock_dark {
+  width: 100%;
+  background-color: rgb(47, 46, 46);
+  margin-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  border-radius: 3px;
+  margin-bottom: 40px;
+}
+/*** конец стилей для темной темы ***/
+
+.avatarBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile {
+  transition: 1000ms;
+}
+.profile-wrapper {
+  width: 230px;
+  padding: 20px;
+  margin: auto;
+}

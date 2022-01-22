@@ -3,10 +3,14 @@ import styles from '../chat.module.css';
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import SearchMessage from './SearchMessage';
+import Toggle from './Toggle';
+import ToogleTheme from './ToogleTheme';
 
 function ChatHeader() {
   const params = useParams().id;
+
   const loading = useSelector((state) => state.messages.loading);
+
   const contact = useSelector((state) => {
     return state.contacts.contacts.find((contact) => contact._id === params);
   });
@@ -38,6 +42,8 @@ function ChatHeader() {
         )}
       </div>
       <div className={styles.toogls}>
+        <ToogleTheme />
+        <Toggle />
       </div>
     </div>
   );
