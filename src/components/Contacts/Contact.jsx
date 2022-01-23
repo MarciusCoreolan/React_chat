@@ -20,8 +20,6 @@ function Contact(props) {
           <div className={styles['info_block']}>
             <NameContacts contacts={props.contact} />
           </div>
-          <div className={styles.time}>
-          </div>
         </li>
       </NavLink>
     </div>

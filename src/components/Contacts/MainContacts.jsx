@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import Contact from './Contact';
 import Search from './Header/Index';
 import styles from './contacts.module.css';
+import Preloader from './Preloader/Preloader';
 
 function MainContacts() {
   const contacts = useSelector((state) => {
@@ -20,6 +21,7 @@ function MainContacts() {
     <div className={styles['main-contact']}>
       <Search />
       <div className={styles['preloader-wrapper']}>
+        <Preloader />
       </div>
     </div>
   ) : (
