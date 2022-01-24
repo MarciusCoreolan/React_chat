@@ -1,25 +1,25 @@
 const initialState = {
   contacts: [],
   loading: false,
-  filter: '',
+  filter: "",
 };
 
 export default function contacts(state = initialState, action) {
   switch (action.type) {
-    case 'contacts/load/start':
+    case "contacts/load/start":
       return {
         ...state,
         loading: true,
       };
 
-    case 'contacts/load/success':
+    case "contacts/load/success":
       return {
         ...state,
         contacts: action.payload,
         loading: false,
       };
 
-    case 'filter/text':
+    case "filter/text":
       return {
         ...state,
         filter: action.payload,
@@ -32,14 +32,14 @@ export default function contacts(state = initialState, action) {
 export const loadContacts = () => {
   return (dispatch) => {
     dispatch({
-      type: 'contacts/load/start',
+      type: "contacts/load/start",
     });
 
-    fetch('https://api.intocode.ru:8001/api/contacts')
+    fetch("https://api.intocode.ru:8001/api/contacts")
       .then((response) => response.json())
       .then((json) => {
         dispatch({
-          type: 'contacts/load/success',
+          type: "contacts/load/success",
           payload: json,
         });
       });
@@ -48,7 +48,7 @@ export const loadContacts = () => {
 
 export const setFilter = (e) => {
   return {
-    type: 'filter/text',
+    type: "filter/text",
     payload: e,
   };
 };

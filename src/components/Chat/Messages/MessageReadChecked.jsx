@@ -1,18 +1,18 @@
-import React from 'react';
-import styles from '../chat.module.css';
-import PropTypes from 'prop-types';
+import React from "react";
+import styles from "../chat.module.css";
+import PropTypes from "prop-types";
 
 function MessageReadChecked({ message, isUserProfile }) {
   return (
     <>
       {!isUserProfile ? (
-        ''
+        ""
       ) : message.sending ? (
-        <div className={styles['message-checked']}>
+        <div className={styles["message-checked"]}>
           <span className="material-icons">schedule</span>
         </div>
       ) : (
-        <div className={styles['message-checked']}>
+        <div className={styles["message-checked"]}>
           {message.read ? (
             <span className="material-icons">done_all</span>
           ) : (

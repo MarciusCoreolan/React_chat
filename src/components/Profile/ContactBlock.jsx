@@ -1,7 +1,7 @@
-import React from 'react';
-import styles from './profile.module.css';
-import Avatar from '../App/Avatar/Avatar';
-import PropTypes from 'prop-types';
+import React from "react";
+import styles from "./profile.module.css";
+import Avatar from "../App/Avatar/Avatar";
+import PropTypes from "prop-types";
 
 function ContactBlock({ contact }) {
   return (

@@ -1,6 +1,6 @@
-import React from 'react';
-import styles from './profile.module.css';
-import PropTypes from 'prop-types';
+import React from "react";
+import styles from "./profile.module.css";
+import PropTypes from "prop-types";
 
 function Social({ contact, darkTheme }) {
   return (

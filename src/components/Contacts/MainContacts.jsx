@@ -1,9 +1,9 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
-import Contact from './Contact';
-import Search from './Header/Index';
-import styles from './contacts.module.css';
-import Preloader from './Preloader/Preloader';
+import React from "react";
+import { useSelector } from "react-redux";
+import Contact from "./Contact";
+import Search from "./Header/Index";
+import styles from "./contacts.module.css";
+import Preloader from "./Preloader/Preloader";
 
 function MainContacts() {
   const contacts = useSelector((state) => {
@@ -11,21 +11,21 @@ function MainContacts() {
       (contact) =>
         contact.fullname
           .toUpperCase()
-          .indexOf(state.contacts.filter.toUpperCase()) > -1,
+          .indexOf(state.contacts.filter.toUpperCase()) > -1
     );
   });
 
   const loading = useSelector((state) => state.contacts.loading);
 
   return loading ? (
-    <div className={styles['main-contact']}>
+    <div className={styles["main-contact"]}>
       <Search />
-      <div className={styles['preloader-wrapper']}>
+      <div className={styles["preloader-wrapper"]}>
         <Preloader />
       </div>
     </div>
   ) : (
-    <div className={styles['main-contact']}>
+    <div className={styles["main-contact"]}>
       <Search />
       <ul>
         {contacts.map((contact) => {

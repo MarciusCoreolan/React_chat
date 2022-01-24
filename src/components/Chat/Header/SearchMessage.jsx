@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import styles from '../chat.module.css';
-import { useDispatch, useSelector } from 'react-redux';
+import React, { useState } from "react";
+import styles from "../chat.module.css";
+import { useDispatch, useSelector } from "react-redux";
 import {
   resetFilterMessage,
   setFilterMessage,
-} from '../../../redux/ducks/messages';
-import { CSSTransition } from 'react-transition-group';
+} from "../../../redux/ducks/messages";
+import { CSSTransition } from "react-transition-group";
 
 function SearchMessage() {
   const dispatch = useDispatch();
@@ -27,13 +27,13 @@ function SearchMessage() {
   };
 
   return (
-    <div className={styles['header-search-block']}>
+    <div className={styles["header-search-block"]}>
       <CSSTransition
         in={isSearchIsActive}
         timeout={200}
         classNames={{
-          enterActive: 'search-btn-active-enter',
-          exitActive: 'search-btn-active-exit',
+          enterActive: "search-btn-active-enter",
+          exitActive: "search-btn-active-exit",
         }}
       >
         <button className="material-icons" onClick={handleToggleStateActive}>
@@ -53,11 +53,11 @@ function SearchMessage() {
               clear
             </button>
           ) : (
-            ''
+            ""
           )}
         </>
       ) : (
-        ''
+        ""
       )}
     </div>
   );

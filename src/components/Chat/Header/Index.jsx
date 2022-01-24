@@ -1,10 +1,10 @@
-import React from 'react';
-import styles from '../chat.module.css';
-import { useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
-import SearchMessage from './SearchMessage';
-import Toggle from './Toggle';
-import ToogleTheme from './ToogleTheme';
+import React from "react";
+import styles from "../chat.module.css";
+import { useSelector } from "react-redux";
+import { useParams } from "react-router-dom";
+import SearchMessage from "./SearchMessage";
+import Toggle from "./Toggle";
+import ToogleTheme from "./ToogleTheme";
 
 function ChatHeader() {
   const params = useParams().id;
@@ -17,8 +17,8 @@ function ChatHeader() {
 
   if (loading) {
     return (
-      <div className={styles['header-loading']}>
-        <div className={styles['header-loader-icon']}>
+      <div className={styles["header-loading"]}>
+        <div className={styles["header-loader-icon"]}>
           <span className="material-icons">cached</span>
         </div>
         <div>Загрузка чата</div>
@@ -29,13 +29,13 @@ function ChatHeader() {
   return (
     <div className={styles.header}>
       <SearchMessage />
-      <div className={styles['header-name-block']}>
+      <div className={styles["header-name-block"]}>
         {contact === undefined ? (
-          ''
+          ""
         ) : contact.online && contact.online !== undefined ? (
           <>
             {contact.fullname}
-            <div className={styles['header-name-online']} />
+            <div className={styles["header-name-online"]} />
           </>
         ) : (
           contact.fullname

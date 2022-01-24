@@ -1,5 +1,5 @@
-import React from 'react';
-import styles from './profile.module.css';
+import React from "react";
+import styles from "./profile.module.css";
 
 function Media({ darkTheme }) {
   return (

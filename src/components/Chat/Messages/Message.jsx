@@ -1,12 +1,12 @@
-import styles from '../chat.module.css';
-import PropTypes from 'prop-types';
-import MessageInfo from './MessageInfo';
-import MessageReadChecked from './MessageReadChecked';
-import MessageTime from './MessageTime';
-import MessageDropdown from './MessageDropdown';
-import Avatar from '../../App/Avatar/Avatar';
-import { useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import styles from "../chat.module.css";
+import PropTypes from "prop-types";
+import MessageInfo from "./MessageInfo";
+import MessageReadChecked from "./MessageReadChecked";
+import MessageTime from "./MessageTime";
+import MessageDropdown from "./MessageDropdown";
+import Avatar from "../../App/Avatar/Avatar";
+import { useSelector } from "react-redux";
+import { useParams } from "react-router-dom";
 
 function Message({ message, profileId }) {
   const isUserProfile = message.toUserId !== profileId;
@@ -18,7 +18,7 @@ function Message({ message, profileId }) {
   const contact = contacts.find((contact) => contact._id === id);
 
   // Вывод сообщения с типом инфо
-  if (message.type === 'info') {
+  if (message.type === "info") {
     return <MessageInfo content={message.content} />;
   }
 
@@ -26,8 +26,8 @@ function Message({ message, profileId }) {
     <div className={isUserProfile ? styles.outgoing : styles.incoming}>
       {isUserProfile ? null : (
         <Avatar
-          size={'small'}
-          fullname={contact.fullname ? contact.fullname : ''}
+          size={"small"}
+          fullname={contact.fullname ? contact.fullname : ""}
         />
       )}
       <div
@@ -36,7 +36,7 @@ function Message({ message, profileId }) {
         }
       >
         <div className={styles.message}>{message.content}</div>
-        <div className={styles['message-time-checked']}>
+        <div className={styles["message-time-checked"]}>
           <MessageReadChecked message={message} isUserProfile={isUserProfile} />
           <MessageTime date={message.time} />
         </div>
@@ -52,7 +52,7 @@ Message.propTypes = {
 };
 
 Message.defaultProps = {
-  profileId: '',
+  profileId: "",
 };
 
 export default Message;

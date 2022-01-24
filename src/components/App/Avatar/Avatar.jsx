@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styles from './avatar.module.css';
+import React from "react";
+import PropTypes from "prop-types";
+import styles from "./avatar.module.css";
 
 function Avatar({ fullname, size, online }) {
   return (
@@ -14,13 +14,13 @@ function Avatar({ fullname, size, online }) {
 Avatar.propTypes = {
   fullname: PropTypes.string,
   online: PropTypes.bool,
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  size: PropTypes.oneOf(["small", "medium", "large"]),
 };
 
 Avatar.defaultProps = {
-  fullname: '',
+  fullname: "",
   online: false,
-  size: 'medium',
+  size: "medium",
 };
 
 export default Avatar;

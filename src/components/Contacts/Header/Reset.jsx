@@ -1,13 +1,13 @@
-import React from 'react';
-import styles from '../contacts.module.css';
-import { setFilter } from '../../../redux/ducks/contacts';
-import { useDispatch } from 'react-redux';
+import React from "react";
+import styles from "../contacts.module.css";
+import { setFilter } from "../../../redux/ducks/contacts";
+import { useDispatch } from "react-redux";
 
 function Reset() {
   const dispatch = useDispatch();
 
   const handleReset = () => {
-    dispatch(setFilter(''));
+    dispatch(setFilter(""));
   };
 
   return (

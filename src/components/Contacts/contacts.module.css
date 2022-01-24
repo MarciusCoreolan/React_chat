@@ -91,7 +91,7 @@ a {
 }
 
 /*** стили для темной темы ***/
-div[name='dark'] .container {
+div[name="dark"] .container {
   transition: 300ms;
   width: 25%;
   box-sizing: border-box;
@@ -100,24 +100,24 @@ div[name='dark'] .container {
   color: white;
   overflow: scroll;
 }
-div[name='dark'] .contacts:hover {
+div[name="dark"] .contacts:hover {
   background-color: #4b4b4b;
 }
-div[name='dark'] .active {
+div[name="dark"] .active {
   background-color: rgba(58, 220, 149, 0.58);
 }
-div[name='dark'] a {
+div[name="dark"] a {
   color: #ffffff;
   text-decoration: none;
 }
-div[name='dark'] .container input {
+div[name="dark"] .container input {
   background-color: #454545;
   color: white;
 }
-div[name='dark'] .container button {
+div[name="dark"] .container button {
   color: darkgrey;
 }
-div[name='dark'] .search-block {
+div[name="dark"] .search-block {
   background-color: #242424;
 }
 

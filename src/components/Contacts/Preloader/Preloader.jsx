@@ -1,5 +1,5 @@
-import React from 'react';
-import PreloaderRow from './PreloaderRow';
+import React from "react";
+import PreloaderRow from "./PreloaderRow";
 
 function Preloader() {
   return new Array(7)

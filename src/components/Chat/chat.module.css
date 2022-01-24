@@ -267,7 +267,7 @@
 
 /** darkTheme **/
 
-div[name='dark'] .container {
+div[name="dark"] .container {
   flex: 1;
   width: 35%;
   padding: 0 10px;
@@ -275,10 +275,10 @@ div[name='dark'] .container {
   transition: 300ms;
   background-color: #1c1c1c;
 }
-div[name='dark'] .container input {
+div[name="dark"] .container input {
   color: white;
 }
-div[name='dark'] .start-page {
+div[name="dark"] .start-page {
   height: 100%;
   display: flex;
   align-items: center;

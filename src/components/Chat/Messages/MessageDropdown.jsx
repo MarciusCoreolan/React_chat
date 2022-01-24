@@ -1,8 +1,8 @@
-import React from 'react';
-import styles from '../chat.module.css';
-import PropTypes from 'prop-types';
-import { removingMessage } from '../../../redux/ducks/messages';
-import { useDispatch } from 'react-redux';
+import React from "react";
+import styles from "../chat.module.css";
+import PropTypes from "prop-types";
+import { removingMessage } from "../../../redux/ducks/messages";
+import { useDispatch } from "react-redux";
 
 function MessageDropdown({ id }) {
   const dispatch = useDispatch();
